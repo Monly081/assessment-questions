@@ -62,7 +62,7 @@ class UENValidation extends Component {
                             value={this.state.uen}
                             onChange={this.handleUserInput} />
 
-                        <button type='submit' disabled={!this.state.formValid}>Check</button>
+                        <button type='submit' disabled={!this.state.formValid}>OK</button>
                     </div>
                 </form>
             </div>

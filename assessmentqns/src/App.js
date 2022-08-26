@@ -1,14 +1,15 @@
-import logo from './logo.svg';
-import { useState, useEffect } from 'react';
 import './App.css';
 import UENValidation from './components/validation';
+import WeatherService from './components/weatherservice';
 
 function App() {
 
   return (
 
-    <div >
+    <div className='Appdiv'>
       <UENValidation />
+      <br/>
+      <WeatherService />
     </div>
   );
 }
