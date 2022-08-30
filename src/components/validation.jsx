@@ -28,7 +28,7 @@ class UENValidation extends Component {
 
         switch (fieldName) {
             case 'uen':
-                uenValid = value.toUpperCase().match(/((S|T)([\d]{2})([A-Z]{2})([\d]{4})([A-Z])|(\d{9})([A-Z]))/g);
+                uenValid = value.match(/(^((S|R)([\d]{2})|T[0-1][0-9]|T2[0-2])(LP|LL|FC|PF|RF|MQ|MM|NB|CC|CS|MB|FM|GS|DP|CP|NR|CM|CD|MD|HS|VH|CH|MH|CL|XL|CX|HC|RP|TU|TC|FB|FN|PA|PB|SS|MC|SM|GA|GB)([\d]{4})([A-Z])$|^(((18|19)\d{2}|20[0-1][0-9]|202[0-2])\d{5})([A-Z])$|(^\d{8})([A-Z]))$/gi);
                 fieldValidationErrors.uen = uenValid ? '' : ' Please enter correct syntax!';
                 break;
 
